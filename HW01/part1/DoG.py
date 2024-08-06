@@ -98,6 +98,3 @@ class Difference_of_Gaussian(object):
         for i in range(self.num_octaves):
             concat = cv2.hconcat(images[i * n: (i + 1) * n])
             cv2.imwrite(f"./output/ocative_{i + 1}.png", concat)
-
-    def _plot_dog_images(self) -> None:
-        pass
